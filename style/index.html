@@ -2,23 +2,19 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>project2</title>
 <style type="text/css">
 * {
 	margin:0;
 	padding:0;
 }
-/*
-body {
-}
-*/
 div.clear {
 	width:0px;
 	height:0px;
 	clear:both;
 }
 div.container {
-	width:950px;
+	width:1366px;
 	margin:0 auto;
 	border:0px solid #000;
 }
@@ -26,22 +22,60 @@ div.header {
 	min-height:253px;
 	width:1364px;
 	border:1px solid #000;
-	background-image:url('image/Untitled1.png');
 }
 div.header-left {
 	min-height:253px;
 	float:left;
 	width:500px;
-	border-right:1px solid #000;
+}
+div.header-left-in{
+	width:200px;
+	height:200px;
+	margin:30px 0 30px 120px;
+}
+div.header-left-in img{
+	position:relative;
+	left:20px;
+	top:10px;
 }
 div.header-right {
 	margin-left:500px;
+	min-height:253px;
 }
 div.header-up {
 	width:auto;
 	min-height:70px;
-	border-bottom:1px solid #000;
 }
+/*****************************menu****************************/
+div.menu {
+	border:1px;
+	height:38px;
+}
+div.menu ul {
+	list-style-type:none;
+}
+div.menu ul li {
+	float:left;
+	border-right:#FFF;
+}
+div.menu ul li:first-child {
+	border-left:#FFF
+}
+div.menu ul li a {
+	text-decoration:none;
+	font-size:18px;
+	font-family:"Times New Roman", Times, serif;
+	padding:15px;
+	color:#666;
+	display:block;
+}
+div.menu ul li:hover {
+	background-color:#FFF;
+}
+div.menu ul li:hover a {
+	color:#000;
+}
+/*******************end menu******************/
 div.header-down {
 	width:auto;
 	min-height:183px;
@@ -50,11 +84,11 @@ div.content-up {
 	width:1364px;
 	min-height:414px;
 	border:1px solid #000;
-	background-image:url('image/Untitled2.png');
+	background-image:url('../project2/style/image/Untitled2.png');
 }
 div.content-middle {
 	border:1px solid #000;
-	background-image:url('image/Untitled3.png');
+	background-image:url('../project2/style/image/Untitled3.png');
 	width:1364px;
 	height:407px;
 }
@@ -77,7 +111,7 @@ div.content-middl-right {
 }
 div.content-down {
 	border:1px solid #000;
-	background-image:url('image/Untitled4.png');
+	background-image:url('../project2/style/image/Untitled4.png');
 	width:1364px;
 	height:316px;
 }
@@ -106,7 +140,6 @@ div.content-down-right {
 }
 div.footer {
 	border:1px solid #000;
-	background-image:url('image/Untitled5.png');
 	width:1364px;
 	height:169px;
 }
@@ -116,16 +149,40 @@ div.footer-left {
 	float:left;
 	border-right:1px solid #000;
 }
+div.footer-right {
+}
 </style>
 </head>
 
 <body>
 <div class="container">
   <div class="header">
-    <div class="header-left"></div>
+    <div class="header-left"> 
+    <div class="header-left-in">
+    <img src="Untitled.png" width="167px" height="150px" align="middle"/>
+   
+      <p align="center"><br/> IMPALA webstudio</p>
+      </div>
+    </div>
     <div class="header-right">
-      <div class="header-up"></div>
-      <div class="header-down"></div>
+      <div class="header-up">
+        <div class="menu">
+          <ul>
+            <li> <a href="#">Acculeil </a></li>
+            <li> <a href="#">Studio </a></li>
+            <li> <a href="#"> Services</a></li>
+            <li> <a href="#">portfolio </a></li>
+            <li> <a href="#"> Blog</a></li>
+            <li> <a href="#">Contact </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-down">
+        <h4>sSybex is an independent entity from CompTIA .</h4>
+        Neither Comp-
+        TIA nor Sybex warrants that use of this publication will ensure passing the relevant exam.Network+ is either a
+        registered trademark or trademark of CompTIA in the United States and/or other countries.TRADEMARKS: SYBEX has attempted throughout this book to distinguish proprietary trademarks from
+descriptive terms by following the capitalization style used by the manufacturer </div>
     </div>
     <div class="clear"></div>
   </div>
@@ -144,7 +201,11 @@ div.footer-left {
     <div class="clear"></div>
   </div>
   <div class="footer">
-    <div class="footer-left"></div>
+    <div class="footer-left"><br/>
+      copyright&copy;2010 impala webstudio- tour droits reserves.<br/>
+      site declara ala cnil-mention legales </div>
+    <div class="footer-right"></div>
+    <div class="clear"></div>
   </div>
 </div>
 </body>
