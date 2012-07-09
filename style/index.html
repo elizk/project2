@@ -8,20 +8,28 @@
 	margin:0;
 	padding:0;
 }
+body {
+	background-color:#eee;
+}
 div.clear {
 	width:0px;
 	height:0px;
 	clear:both;
 }
 div.container {
-	width:1366px;
+	width:1364px;
 	margin:0 auto;
-	border:0px solid #000;
+	border:1px solid #CCC;
 }
+p.matn{
+	color:#999;
+	font-size:18px;
+	padding-top:10px;
+}
+/**************************HEADER****************************/
 div.header {
 	min-height:253px;
 	width:1364px;
-	border:1px solid #000;
 }
 div.header-left {
 	min-height:253px;
@@ -59,7 +67,8 @@ div.menu ul li {
 	border-right:#FFF;
 }
 div.menu ul li:first-child {
-	border-left:#FFF
+	border-left:#FFF;
+	color:#000;
 }
 div.menu ul li a {
 	text-decoration:none;
@@ -70,7 +79,7 @@ div.menu ul li a {
 	display:block;
 }
 div.menu ul li:hover {
-	background-color:#FFF;
+	background-color:#eee;
 }
 div.menu ul li:hover a {
 	color:#000;
@@ -80,58 +89,86 @@ div.header-down {
 	width:auto;
 	min-height:183px;
 }
+/******************CONTENT-UP*****************/
 div.content-up {
 	width:auto;
 	min-height:414px;
-	border:1px solid #000;
 }
 div.content-up-in {
 	width:1173px;
 	height:390px;
-	border:5px solid #999;
+	border:5px solid #AAA;
 	background-image:url('Untitled3.png');
 	margin:25px 0px 10px 95px;
 }
+#in {
+	width:300px;
+	height:15px;
+	float:right;
+	padding:20px;
+	background-color:#000;
+	margin:245px 0px 150px 615px;
+}
+/****************CONTENT-MIDDLE***************/
 div.content-middle {
-	border:1px solid #000;
 	width:1364px;
 	height:407px;
+	border-bottom:1px solid #CCC;
 }
 div.content-middl-left {
 	width:485px;
 	min-height:407px;
 	float:left;
 }
-div.content-middle-in1{
+div.content-middle-in1 {
 	width:386px;
 	min-height:320px;
 	padding:10px 0px 10px 95px;
 }
-div.content-middle-in2{
+#in1 {
+	width:130px;
+	height:25px;
+	background-color:#CC3;
+	position:relative;
+	top:25px;
+}
+div.content-middle-in2 {
 	width:385px;
 	min-height:320px;
 	padding:10px 0 10px 10px;
 }
-
-div.content-middle-in3{
+#in2 {
+	width:233px;
+	height:25px;
+	background-color:#CC3;
+	position:relative;
+	top:25px;
+}
+div.content-middle-in3 {
 	width:386px;
 	min-height:320px;
 	padding:10px 0 10px 20px;
 }
-
+#in3 {
+	width:170px;
+	height:25px;
+	background-color:#CC3;
+	position:relative;
+	top:25px;
+}
 div.content-middl-middle {
 	width:auto;
 	min-height:407px;
 	margin-left:485px;
-	border-right:1px solid #000;
 }
 div.content-middl-right {
 	width:485px;
 	min-height:407px;
 	float:right;
 }
+/*******************CONTENT-DOWN********************/
 div.content-down {
-	border:1px solid #000;
+	border-bottom:1px solid #CCC;
 	width:1364px;
 	height:316px;
 }
@@ -157,8 +194,11 @@ div.content-down-left ul {
 	top:20px;
 	left:95px;
 }
+span {
+	background-color:#C90;
+}
+/*******************FOOTER**************************/
 div.footer {
-	border:1px solid #000;
 	width:1364px;
 	height:169px;
 }
@@ -166,10 +206,17 @@ div.footer-left {
 	width:500px;
 	min-height:169px;
 	float:left;
-	border-right:1px solid #000;
 }
 div.footer-right {
 }
+#footer-form {
+	float:right;
+	padding:50px 200px 0 0;
+}
+#footer-img {
+	padding:70px 0 0 130px;
+}
+/***************************end*******************************/
 </style>
 </head>
 
@@ -196,17 +243,17 @@ div.footer-right {
         </div>
       </div>
       <div class="header-down">
-        <h4>sSybex is an independent entity from CompTIA .</h4>
-        Neither Comp-
-        TIA nor Sybex warrants that use of this publication will ensure passing the relevant exam.Network+ is either a
-        registered trademark or trademark of CompTIA in the United States and/or other countries.TRADEMARKS: SYBEX has attempted throughout this book to distinguish proprietary trademarks from
-        descriptive terms by following the capitalization style used by the manufacturer </div>
+        <h2>Une agence web à taille humaine, une équipe à votre écoute.</h2>
+       
+<p class="matn">Une agence web à taille humaine, une équipe à votre écoute.
+Chez Impala Webstudio, nous sommes une équipe de passionnés, créative et dynamique. Nous réalisons des sites internet clairs et efficaces. De la simplicité en somme, pour vous et vos clients.</p>
+  </div>
     </div>
     <div class="clear"></div>
   </div>
   <div class="content-up">
     <div class="content-up-in">
-      <div style="width:300px; height:15px; float:right; padding:20px; background-color:#000; margin:245px 0px 150px 615px;">
+      <div id="in">
         <p style="font-size:24px; color:#C90;"> Site of month Awwwards</p>
       </div>
     </div>
@@ -214,40 +261,31 @@ div.footer-right {
   </div>
   <div class="content-middle">
     <div class="content-middl-left">
-    <div class="content-middle-in1">
-     <div style="width:130px; height:25px; background-color:#CC3; position:relative; top:25px;"><p style="font-size:24px;">&nbsp; Liquip</p></div>
-    <img src="Untitled4.png" width="372px" height="136px"/>
-    
-    <p> Thank you for looking to Sybex for your Network+ exam prep needs. We at Sybex are proud
-of our reputation for providing certification candidates with the practical knowledge and skills
-needed to succeed in the highly competitive IT marketplace. Certification candidates have come</p>
-    
-    
-    </div>
-    
-    
+      <div class="content-middle-in1">
+        <div id="in1">
+          <p style="font-size:24px; padding-left:10px;"> Liquip</p>
+        </div>
+        <img src="Untitled4.png" width="372px" height="136px"/>
+        <p class="matn"> C’est dans l’enceinte d’une ancienne école que l’équipe d’Impala Webstudio active ses méninges et sa créativité. Un lieu avant tout convivial, où le travail et la bonne humeur font bon ménage.</p>
+      </div>
     </div>
     <div class="content-middl-right">
-    <div class="content-middle-in3">
-     <div style="width:170px; height:25px; background-color:#CC3; position:relative; top:25px;"><p style="font-size:24px;">&nbsp; En Coullsese </p></div>
-    <img src="Untitled6.png" width="372px" height="136px"/>
-    <p> Thank you for looking to Sybex for your Network+ exam prep needs. We at Sybex are proud
-of our reputation for providing certification candidates with the practical knowledge and skills
-needed to succeed in the highly competitive IT marketplace. Certification candidates have come</p>
-    
-    
-    </div>
+      <div class="content-middle-in3">
+        <div id="in3">
+          <p style="font-size:24px; padding-left:10px;"> En Coullsese </p>
+        </div>
+        <img src="Untitled6.png" width="372px" height="136px"/>
+        <p class="matn"> Grands buveurs de café que nous sommes, nous serons ravis de vous offrir une petite tasse de ce breuvage torréfié. Alors si vous passez dans le coin, n’hésitez pas ! ... Avec ou sans sucre ?</p>
+      </div>
     </div>
     <div class="content-middl-middle">
-    <div class="content-middle-in2">
-   <div style="width:233px; height:25px; background-color:#CC3; position:relative; top:25px;"><p style="font-size:24px;">&nbsp; Une pause cofe?</p></div>
-    <img src="Untitled5.png" width="374px" height="135px"/>
-    <p> Thank you for looking to Sybex for your Network+ exam prep needs. We at Sybex are proud
-of our reputation for providing certification candidates with the practical knowledge and skills
-needed to succeed in the highly competitive IT marketplace. Certification candidates have come</p>
-    
-    
-    </div>
+      <div class="content-middle-in2">
+        <div id="in2">
+          <p style="font-size:24px; padding-left:10px;"> Une pause cofe?</p>
+        </div>
+        <img src="Untitled5.png" width="374px" height="135px"/>
+        <p class="matn">Les dessous de l’agence, la vie au 43 rue Charlie Chaplin, les dernières actualités, mais aussi les nouvelles réalisations... En parcourant notre blog, plongez dans les coulisses d’Impala Webstudio.</p>
+      </div>
     </div>
     <div class="clear"></div>
   </div>
@@ -288,26 +326,19 @@ needed to succeed in the highly competitive IT marketplace. Certification candid
       <ul>
         RESTONS IN CONTACT <br/>
         <br/>
-        <li>
-        <img src="Untitled15.png"/>
-          <div style="background-color:#C90; float:left;"> 03 20 26 96 25 </div>
-        </li>
+        <li> <img src="Untitled15.png"/> <span> 03 20 26 96 25 </span> </li>
         <br/>
         <li> <br/>
-          <img src="Untitled16.png"/>
-          <div style="float:left;background-color:#C90;"> Contact @ impala-webstudio.fr</div>
-        </li>
+          <img src="Untitled16.png"/> <span> Contact @ impala-webstudio.fr</span> </li>
         <br/>
         <li><br/>
-         <img src="Untitled17.png"/>
-          <div style="background-color:#C90; float:left;"> 43 rue charlie chaplin <br/>
-            59100 RauBAIX</div>
-        </li>
+          <img src="Untitled17.png"/> <span>43 rue charlie chaplin
+          <p style="padding-left:23px;"> 59100 RauBAIX </p>
+          </span> </li>
         <br/>
-        <li> <br/>
-         <img src="Untitled18.png"/>
-          Trouvez-nous rapidement <br/>
-          sur Google Maps </li>
+        <li> <img src="Untitled18.png"/> Trouvez-nous rapidement
+          <p style="padding-left:23px;">sur Google Maps </p>
+        </li>
         <br/>
       </ul>
     </div>
@@ -319,8 +350,8 @@ needed to succeed in the highly competitive IT marketplace. Certification candid
         <br/>
         <li>
           <form name="input" action="html_form_action.asp" method="get">
-            <input type="text" name="content" placeholder="votri email ici" />
-            <input type="submit" value="ok"
+            <input type="text" name="content" placeholder="votri email ici" size="25" />
+            <input type="submit" value="ok" size="20"/>
           </form>
         </li>
         <br/>
@@ -336,20 +367,15 @@ needed to succeed in the highly competitive IT marketplace. Certification candid
         site declara ala cnil-mention legales</p>
     </div>
     <div class="footer-right">
-   
-   
-    <form action="" method="get" >
-     
-    <input type="submit" value="f"/>
-    <input type="submit" value="t"/>
-    <input type="submit" value="fr"/>
-    <input type="submit" value=">>"/>
-    <input type="text" name="content" placeholder="regignes-none"/>
-     <input type="text" name="content" placeholder="espace-client"/>
-     
-    </form>
-    <img  src="untitled19.png"/>
-    </div>
+      <form action="#" method="get" id="footer-form" >
+        <input type="submit" value="f" size="25"/>
+        <input type="submit" value="t" size="25"/>
+        <input type="submit" value="fr" size="25"/>
+        <input type="submit" value=">>" size="25"/>
+        <input type="text" name="content" placeholder="regignes-none"/>
+        <input type="text" name="content" placeholder="espace-client"/>
+      </form>
+      <img  src="untitled19.png" id="footer-img"/> </div>
     <div class="clear"></div>
   </div>
 </div>
